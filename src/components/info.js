@@ -8,7 +8,7 @@ export default function Info() {
     return(
         <div>
 
-            <p>Hello There</p>
+            <p>Hello potato</p>
 
 
         </div>

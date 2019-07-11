@@ -1,14 +1,24 @@
-import React from 'react'
+import React, { useState } from "react";
 
 
 
-export default function Header() {
+export default function Header(props) {
 
+    console.log(props)
+
+
+    // const [header, setHeader] = useState(props)
+
+    // const titleFunc = () => {
+    //     console.log(props.title)
+    // }
+
+    // console.log(header)
 
     return(
         <div>
 
-            <p>Hello There</p>
+            <p>this is {nasaProps.title}</p>
 
 
         </div>

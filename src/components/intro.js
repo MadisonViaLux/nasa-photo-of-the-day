@@ -8,7 +8,7 @@ export default function Intro() {
     return(
         <div>
 
-            <p>Hello There</p>
+            <p>Hello space</p>
 
 
         </div>
