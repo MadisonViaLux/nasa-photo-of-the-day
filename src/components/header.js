@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React from "react";
+import '../App.css'
 
 
 const Header = (props) => {
@@ -14,10 +14,17 @@ const Header = (props) => {
     // console.log(header)
 
     return(
-        <div>
+        <div className='header'>
 
-            <p>this is {props.title}</p>
+            <h3>This is the {props.title}</h3>
 
+            <div className='copyRight'>
+                <p>Taken: {props.date}</p>
+
+
+
+                <p>By: {props.copyright}</p>
+            </div>
 
         </div>
     )

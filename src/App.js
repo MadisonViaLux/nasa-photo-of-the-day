@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 import Header from './components/header';
-// import Intro from './components/intro';
-// import Info from './components/info';
+import Info from './components/info';
 
 
 import "./App.css";
@@ -27,19 +26,15 @@ function App() {
   // console.log(nasaData)
 
   return (
-    <div className="App">
-
-      <h3>{nasaData.title}</h3>
+    <div  className='App'>
       
-      <img src={nasaData.url} alt='space stuff'></img>
-    
+      <Header {...nasaData} />
 
+      <div className='img-link'>
+        <a href={nasaData.hdurl}><img className='App-logo' src={nasaData.url} alt='space stuff'/></a>
+      </div>
 
-
-
-      <Header title={nasaData.title} />
-      {/* <Intro /> */}
-      {/* <Info /> */}
+      <Info {...nasaData} />
     </div>
   );
 }

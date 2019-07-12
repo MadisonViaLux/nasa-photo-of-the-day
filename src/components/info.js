@@ -1,16 +1,16 @@
 import React from 'react'
+import '../App.css'
 
 
-
-export default function Info() {
+export default function Info(props) {
 
 
     return(
-        <div>
+        <div className='info-footer'>
 
-            <p>Hello potato</p>
+            <p>{props.explanation}</p>
 
-
+            <p>{props.copyright} {props.service_version}</p>
         </div>
     )
 }
