@@ -2,25 +2,26 @@ import React, { useState } from "react";
 
 
 
-export default function Header(props) {
+const Header = (props) => {
 
     console.log(props)
 
+    // if (!props.photoOfTheDay) return <h3>Loading...</h3>;
 
-    // const [header, setHeader] = useState(props)
+    // const [header, setHeader] = useState([props])
 
-    // const titleFunc = () => {
-    //     console.log(props.title)
-    // }
 
     // console.log(header)
 
     return(
         <div>
 
-            <p>this is {nasaProps.title}</p>
+            <p>this is {props.title}</p>
 
 
         </div>
     )
-}
+};
+
+
+export default Header

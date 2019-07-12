@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 import Header from './components/header';
-import Intro from './components/intro';
-import Info from './components/info';
+// import Intro from './components/intro';
+// import Info from './components/info';
 
 
 import "./App.css";
@@ -24,17 +24,22 @@ function App() {
     })
   }, [])
 
+  // console.log(nasaData)
 
   return (
     <div className="App">
 
+      <h3>{nasaData.title}</h3>
+      
       <img src={nasaData.url} alt='space stuff'></img>
     
-      <Header nasaProps={nasaData} />
-      <Intro />
-      <Info />
 
 
+
+
+      <Header title={nasaData.title} />
+      {/* <Intro /> */}
+      {/* <Info /> */}
     </div>
   );
 }
