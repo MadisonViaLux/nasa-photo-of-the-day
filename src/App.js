@@ -25,13 +25,21 @@ function App() {
 
   console.log(nasaData)
 
+  const JIC = () => {
+    if(nasaData.hdurl){
+        return <img className='App-logo' src={nasaData.hdurl} alt='space stuff'/>
+    } else {
+        return <img className='App-logo' src={nasaData.url} alt='space stuff'/>
+    }
+  }
+
   return (
     <div  className='App'>
       
       <Header {...nasaData} />
 
       <div className='img-link'>
-        <a href={nasaData.hdurl}><img className='App-logo' src={nasaData.hdurl} alt='space stuff'/></a>
+        {JIC()}
       </div>
 
       <Info {...nasaData} />
