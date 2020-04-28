@@ -12,6 +12,14 @@ const Header = (props) => {
 
     // console.log(header)
 
+    const JIC = () => {
+        if(props.copyright){
+            return <p>By: {props.copyright}</p>
+        } else {
+            return <p>By: *undisclosed*</p>
+        }
+    }
+
     return(
         <div className='header'>
 
@@ -22,7 +30,7 @@ const Header = (props) => {
 
 
 
-                <p>By: {props.copyright}</p>
+                <p>{JIC()}</p>
             </div>
 
         </div>
