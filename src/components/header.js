@@ -4,14 +4,6 @@ import '../App.css'
 
 const Header = (props) => {
 
-    // console.log(props)
-
-    // if (!props.photoOfTheDay) return <h3>Loading...</h3>;
-
-    // const [header, setHeader] = useState([props])
-
-    // console.log(header)
-
     const JIC = () => {
         if(props.copyright){
             return <p>By: {props.copyright}</p>
@@ -28,9 +20,7 @@ const Header = (props) => {
             <div className='copyRight'>
                 <p>Taken: {props.date}</p>
 
-
-
-                <p>{JIC()}</p>
+                {JIC()}
             </div>
 
         </div>

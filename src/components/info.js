@@ -15,7 +15,9 @@ export default function Info(props) {
 
     return(
         <div className='info-footer'>
-            <p><h2>Description:</h2> {props.explanation}</p>
+            <h2>Description:</h2>
+            
+            <p>{props.explanation}</p>
 
             <p>{JIC()} Version: {props.service_version}</p>
         </div>

@@ -18,18 +18,15 @@ function App() {
 
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=gtiSRp3bscHE6KgeeaVNJ3INxXtk8bp3LMdhhMN9').then(res => {
-      // console.log(res.data)
       setNasaData(res.data)
     })
   }, [])
 
-  console.log(nasaData)
-
   const JIC = () => {
     if(nasaData.hdurl){
-        return <img className='App-logo' src={nasaData.hdurl} alt='space stuff'/>
+        return <img className='App-logo' src={nasaData.hdurl} alt='Loading...'/>
     } else {
-        return <img className='App-logo' src={nasaData.url} alt='space stuff'/>
+        return <img className='App-logo' src={nasaData.url} alt='Loading...'/>
     }
   }
 
