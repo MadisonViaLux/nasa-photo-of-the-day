@@ -11,7 +11,9 @@
 }
 
 .App-logo {
-  margin-right: 1rem;
+  margin: 1rem auto;
+  width: 75%;
+  /* height: 8rem; */
   border-radius: 30%;
   animation: App-logo-spin infinite 40s linear;
   height: 70vmin;

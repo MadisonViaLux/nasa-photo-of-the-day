@@ -4,12 +4,20 @@ import '../App.css'
 
 export default function Info(props) {
 
+    const JIC = () => {
+        if(props.copyright){
+            return <p>Copyright: {props.copyright} || </p>
+        } else {
+            return null
+        }
+    }
+
 
     return(
         <div className='info-footer'>
-            <p>{props.explanation}</p>
+            <p><h2>Description:</h2> {props.explanation}</p>
 
-            <p>{props.copyright} {props.service_version}</p>
+            <p>{JIC()} Version: {props.service_version}</p>
         </div>
     )
 }

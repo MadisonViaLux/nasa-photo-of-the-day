@@ -4,19 +4,18 @@ import '../App.css'
 
 const Header = (props) => {
 
-    console.log(props)
+    // console.log(props)
 
     // if (!props.photoOfTheDay) return <h3>Loading...</h3>;
 
     // const [header, setHeader] = useState([props])
-
 
     // console.log(header)
 
     return(
         <div className='header'>
 
-            <h3>This is the {props.title}</h3>
+            <h3>This is {props.title}</h3>
 
             <div className='copyRight'>
                 <p>Taken: {props.date}</p>
